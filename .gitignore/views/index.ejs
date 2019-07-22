@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <title>Web RTC</title>
+    <script src="jquery.js">  </script>
+    <!-- <script src= "peer.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/peerjs@0.3.20/dist/peer.min.js"></script>
+    <script src="socket.io/socket.io.js"></script>
+  </head>
+  <body>
+
+    <div id="formLogin">
+      <input type="text"id="txtUsername"placeholder="username">
+      <button id="btnSignUp">Sign Up</button>
+    </div>
+    <div id="formMain">
+      <h3>User Online</h3>
+      <ul id="ulUser">
+
+      </ul>
+      <h3 id="my-peer">Your Id: </h3>
+      <video id="localStream" width="300px" controls></video>
+      <br><br>
+      <video id="remoteStream" width="300px" controls></video>
+      <!-- <input type="text" id= "remoteId" placeholder="Remote ID">
+      <button id="btnCall">Call</button> -->
+    </div>
+  </body>
+  <script src = "main.js"></script>
+</html>
