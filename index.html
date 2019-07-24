@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Call App</title>
+		<script src= "jquery.js"></script>
+		<script src= "peer.js"></script>
+		<script src="socket.io.js"></script>
+	</head>
+	<body>
+		<div id="div-chat">
+			<h4>Online User</h4>
+			<ul id="ulUser">
+			</ul>
+			<h3 id="mypeer">My Peer: </h3>
+			<video id="localStream" width="300" controls></video><br><br>
+			<video id="remoteStream" width="300" controls></video><br><br>
+			<input type="text" id= "remoteId" placeholder="Remote ID">
+			<button id="btnCall">Call</button>
+		</div>
+		<div id="div-dang-ky">
+			<input type="text" id="txtUsername" placeholder="Enter your Username">
+			<button id="btnSignUp">Sign Up</button>
+		</div>
+	</body>
+	<script src="main.js"></script>
+</html>
