@@ -20,7 +20,7 @@ socket.on('dang_ky_that_bai',()=>{
 	alert('username da co nguoi ky');
 });
 function openStream(){
-  const config = {audio: false, video: true};
+  const config = {audio: true, video: true};
   return navigator.mediaDevices.getUserMedia(config);
 }
 function playStream(idVideoTag,stream){
